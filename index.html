@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Profile</h1>
+            <div class="nav-links-left">
+                <a href="#" class="nav-item">Home</a>
+                <a href="#" class="nav-item active">My Profile</a>
+                <a href="#" class="nav-item">Find Connections</a>
+            </div>
+            <div class="nav-links-right">
+                <button class="btn-signout">Sign Out</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        
+        <div class="col-main">
+            
+            <div class="card">
+                <div class="card-header"></div>
+                <div class="card-body">
+                    <div class="avatar-box">
+                        <div class="avatar-placeholder"></div>
+                    </div>
+                    <h1 class="name" id="profile-name">Jane Doe</h1>
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i> Seattle
+                    </p>
+                    <p class="job-title">Developer | Engineer | Problem Solver</p>
+                    <p class="bio">Master of shadows and the Internet!</p>
+                    <a href="#" class="edit-link" id="edit-profile-btn">
+                        <i class="fa-solid fa-gear"></i> edit profile
+                    </a>
+                </div>
+            </div>
+
+            <div class="card card-margin">
+                <div class="card-title-bar">Education</div>
+                <div class="card-content">
+                    <h3 class="edu-title">Coding Dojo - Full Stack Bootcamp</h3>
+                    <p class="edu-date">Dec 2019 - Mar 2020</p>
+                    <p class="edu-desc">Triple black belt in Python, MERN, and C#...</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-sidebar">
+            
+            <div class="card">
+                <div class="card-title-bar">
+                    <span class="badge" id="requests-count">2</span> Connection Requests
+                </div>
+                <div class="card-content list-container">
+                    <div class="list-item">
+                        <div class="user-info">
+                            <div class="list-avatar"></div>
+                            <span class="user-name">Todd E</span>
+                        </div>
+                        <div class="action-icons">
+                            <i class="fa-solid fa-circle-check accept-icon" onclick="handleRequest(this, true)"></i>
+                            <i class="fa-solid fa-circle-xmark reject-icon" onclick="handleRequest(this, false)"></i>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="user-info">
+                            <div class="list-avatar"></div>
+                            <span class="user-name">Phil K</span>
+                        </div>
+                        <div class="action-icons">
+                            <i class="fa-solid fa-circle-check accept-icon" onclick="handleRequest(this, true)"></i>
+                            <i class="fa-solid fa-circle-xmark reject-icon" onclick="handleRequest(this, false)"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-margin">
+                <div class="card-title-bar">
+                    <span class="badge" id="connections-count">500</span> Your Connections
+                </div>
+                <div class="card-content list-container">
+                    <div class="list-item">
+                        <div class="user-info">
+                            <div class="list-avatar"></div>
+                            <span class="user-name">Adrien D</span>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="user-info">
+                            <div class="list-avatar"></div>
+                            <span class="user-name">Anne J</span>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="user-info">
+                            <div class="list-avatar"></div>
+                            <span class="user-name">Alayne T</span>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="user-info">
+                            <div class="list-avatar"></div>
+                            <span class="user-name">Arry Y</span>
+                        </div>
+                    </div>
+                    
+                    <hr class="line-separator">
+                    <a href="#" class="view-more">View More</a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
